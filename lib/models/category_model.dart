@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CategoryModel {
   String name;
   String iconPath;
-  String boxColor;
+  Color boxColor;
 
   CategoryModel({
     required this.name,
@@ -25,7 +25,7 @@ class CategoryModel {
       CategoryModel(
           name: 'Cake',
           iconPath: 'assets/icons/pancakes.svg',
-          boxColor: Color(0xffc58bf2)),
+          boxColor: Color(0xffC58BF2)),
     );
 
     categories.add(
@@ -39,7 +39,8 @@ class CategoryModel {
       CategoryModel(
           name: 'Smoothies',
           iconPath: 'assets/icons/orange-snacks.svg',
-          boxColor: Color(0xff92A3FD)),
+          boxColor: Color(0xffC58BF2)),
     );
+    return categories;
   }
 }

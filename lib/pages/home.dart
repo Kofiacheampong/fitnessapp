@@ -42,19 +42,24 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black),
                 ),
               ),
-              SizedBox(height: 15,),
-              Container(
-                  height: 150, color: Colors.green, child: ListView.separated(
-                    itemCount:categories.length ,
+              SizedBox(
+                height: 15,
+              ),
+              SizedBox(
+                  height: 150,
+                  child: ListView.separated(
+                    itemCount: categories.length,
                     scrollDirection: Axis.horizontal,
-                    separatorBuilder: (context, index) => SizedBox(width: 25,),
-                    itemBuilder: (context, index) => {
+                    separatorBuilder: (context, index) => SizedBox(
+                      width: 25,
+                    ),
+                    itemBuilder: (context, index) {
                       return Container(
                         width: 100,
                         decoration: BoxDecoration(
-                          color: categories[index].boxColor.widthOpacity(0.3)
+                          color: categories[index].boxColor.withOpacity(0.3),
                         ),
-                      ),
+                      );
                     },
                   ))
             ],
